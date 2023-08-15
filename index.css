@@ -185,6 +185,7 @@ body{
     padding-top: 2rem;
     margin-bottom: 2.3rem;
     position: relative;
+    overflow-x: hidden;
 }
 .about .about_head{
     width: 100%;
@@ -254,7 +255,7 @@ body{
 .about .about_contain{
     display:grid;
     grid-template-columns: 1fr 10fr 1fr;
-    padding-top: 1.31rem;
+    padding-top: 1.1rem;
     position: relative;
     z-index: 1000;
 }
@@ -275,6 +276,9 @@ body{
     justify-content: center;
     width: 100%;
     
+}
+.about .about_button .about_button_text{
+    display: none;
 }
 .about .about_button .button{
     display: flex;
@@ -455,8 +459,42 @@ body{
     .about .about_logo .logo_header_contain span{
         font-size: 1.65rem;
     }
+    .about .about_contain{
+        grid-template-columns: 2fr 8fr 2fr;
+    }
     .about .about_contain p{
-        font-size: 1.1rem;
+        font-size: 1rem;
+    }
+    .about .about_button{
+        grid-template-columns: 1fr 3fr 1fr 1fr 3fr 2fr;
+        margin-top: 2rem;
+    }
+    .about .about_button .about_button_text{
+        display: flex;
+        grid-column-start: 2;
+        align-items: center;
+        color: #fff;
+        font-size: 600;
+        justify-content: center;
+        font-size: 0.93rem;
+    }
+    .about .about_button .minus_about{
+        color: #ffffff89;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about .about_button .button{
+        grid-column-start: 4;
+        grid-column-end: 6;
+        width: 90%;
+        height: 3.6875rem;
+        margin-left: 10%;
+    }
+    @media screen and (min-width: 600px){
+        .about .about_contain p{
+            font-size: 1.1rem;
+        }
     }
     /**/
     @media screen and (min-width: 800px){
