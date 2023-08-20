@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    max-width: 100%;
+    margin: 0;
+    background: #FFF;
+}
+:root{
+    font-size: 16px;;
+}
+.navagation{
+    position: fixed;
+    z-index: 1000;
+    top:3.125rem;
+    width: 100%;
+    border-bottom: 0.5px solid #c1d9d5;
+    display: grid;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+
+.navagation .contain{
+    margin-left: 1.25rem;
+    margin-right: 1.22rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3.25rem;
+}
+.navagation .contain .logo_Minh_Nhut{
+    color: #001E2B;
+    font-family: "Roboto Mono";
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+main{
+    display: block;
+}
+main .notification{
+    position: relative;
+    width: 100%;
+    height: 3.125rem;
+    background: #116149;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+}
+main .notification .span-notification{
+    height: 3.125rem;
+    margin-left: 1.25rem;
+    height: 1.25rem;
+    color: #FFF;
+    font-family: "Roboto";
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 146.023%; /* 1.27769rem */
+    letter-spacing: 0.04375rem;
+    overflow-x: scroll;
+}
+main .home{
+    width:100%;
+    z-index: 100;
+    margin-top: 4.37rem;
+    height: 2rem;
+}
+.home .logo_home{
+    margin-left: 1.25rem;
+    height: 1.25rem;
+    border-left: 2px solid #00ED64;
+    padding-left: 0.63rem;
+}
+.home .logo_home span{
+    display: flex;
+    height: 1.25rem;
+    flex-direction: column;
+    justify-content: center;
+    color: #3D4F58;
+    font-family: "Roboto Mono";
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.3075rem;
+}
+.home .image-home{
+    margin-left: 1.25rem;
+    margin-right: 1.22rem;
+    position: relative;
+    margin-top: 2.37rem;
+}
+.home .image-home img{
+    width: 100%;
+}
+.home .h1-home{
+    display: block;
+    margin-left: 1.25rem;
+    margin-right: 1.22rem;
+    display: grid;
+    grid-template-columns: 10fr 2fr;
+}
+.home .h1-home h1{
+    color: #001E2B;
+    font-family: "Rosarivo";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110.523%;
+}
+.home .p-home{
+    margin-left: 1.25rem;
+    margin-right: 1.22rem;
+    display: grid;
+    align-items: center;
+    margin-top: 0;
+    color: #3D4F58;
+    font-family: "Roboto";
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150.523%; /* 1.41113rem */
+    letter-spacing: 0.02344rem;
+}
+.home .span-home{
+    margin-left: 1.25rem;
+    margin-right: 1.22rem;
+    color: #3D4F58;
+    font-family: "Roboto";
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 118.023%; /* 1.10644rem */
+    letter-spacing: 0.01875rem;
+}
+.home .button-home{
+    margin-left: 1.25rem;
+    margin-right: 1.22rem;
+    height: 3rem;
+    margin-top: 2rem;
+    border-radius: 0.3125rem;
+    border: 0.7px solid #00684A;
+    background: #00ED64;
+}
+.home .button-home span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    color: #001E2B;
+    text-align: center;
+    font-family: "Roboto Mono";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 118.023%; 
+}
