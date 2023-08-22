@@ -24,5 +24,22 @@ window.addEventListener("scroll", ()=>{
     }
     console.log(position(home));
 })
-
-
+//work and education
+const containerJourney = document.getElementById("container-journey");
+const journeyChoice = document.querySelectorAll('.liJourney');
+function removeAll(){
+    journeyChoice.forEach(element => {
+        element.classList.remove("active");
+    });
+}
+journeyChoice.forEach(element =>{
+    element.addEventListener("click", ()=>{
+        removeAll();
+        element.classList.add("active");
+       if(element.innerHTML == "Education"){
+        containerJourney.classList.remove("exWork");
+       }else{
+        containerJourney.classList.add("exWork");
+       }
+    })
+} )

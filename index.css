@@ -156,6 +156,9 @@ main .home.fixed{
     border: 0.7px solid #00684A;
     background: #00ED64;
 }
+.button-home:hover{
+    cursor: pointer;
+}
  .button-home span{
     display: flex;
     justify-content: center;
@@ -219,11 +222,11 @@ main .home.fixed{
 /* about section*/
 
 .about{
-    border-radius: 0rem 5.625rem 0rem 0rem;
+    border-radius: 0rem 5.625rem 2.625rem 0rem;
     background: #001E2B;
     width: 100%;
     padding-top: 2.44rem;
-    padding-bottom: 2.44rem;
+    padding-bottom: 3.44rem;
 }
 .about .head-about{
     margin-left: 1.25rem;
@@ -312,7 +315,8 @@ main .home.fixed{
     border: 0.7px solid #00684A;
     background: #00ED64;
 }
-.button-about span{
+.button-about a{
+    text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -325,11 +329,14 @@ main .home.fixed{
     font-weight: 500;
     line-height: 118.023%; 
 }
+.button-about:hover{
+    cursor: pointer;
+}
 .about .level{
     width: 100%;
     display: block;
 }
-.level .h1-level{
+ .h1-level{
     margin-left: 1.25rem;
     margin-right: 1.22rem;
     display: grid;
@@ -337,7 +344,7 @@ main .home.fixed{
     align-items: center;
     margin-top: 2.44rem;
 }
-.level .h1-level h1{
+ .h1-level h1{
     color: #FFF;
     font-family: "Roboto Serif";
     font-size: 1.625rem;
@@ -347,7 +354,7 @@ main .home.fixed{
     letter-spacing: 0.08125rem;
     margin: 0;
 }
-.level .p-level{
+ .p-level{
     margin-left: 1.25rem;
     margin-right: 1.22rem;
     color: #B8C4C2;
@@ -364,7 +371,6 @@ main .home.fixed{
     margin-left: 1.25rem;
     position: relative;
     z-index: 99;
-    text-transform: capitalize;
 }
 .frame-website .h4-website{
     color: #FFF;
@@ -442,4 +448,115 @@ main .home.fixed{
     top: 0;
     width: 100%;
     z-index: 1;
+}
+.h1-level.journey{
+    margin-top: 4.69rem;
+}
+.p-level.journey{
+    margin-bottom: 2.39rem;
+}
+.content-journey{
+    position: relative;
+    margin-left: 1.25rem;
+    margin-right: 1.22rem;
+}
+.content-journey ul{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding-inline-start: 0;
+    border-bottom: 2px solid #21313C;
+}
+.content-journey ul li{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    width: 10.8125rem;
+    height: 2.5625rem;
+    color: #FFF;
+    font-family: "Roboto Mono";
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 134.523%; /* 1.26113rem */
+    letter-spacing: 0.04688rem;
+}
+.content-journey ul li.active{
+    border-bottom: #00ED64 3px solid;
+}
+
+.education{
+    margin-top: 1.91rem;
+}
+ .comp-journey{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+}
+ .comp-journey div.group{
+    width: 100%;
+    height: 5.625rem;
+    border-radius: 0 3.875rem 3.875rem 0 ;
+    background: #21313C;  
+    display: flex;
+    align-items: center;
+}
+ .comp-journey:nth-child(2n){
+    grid-template-columns: 5fr 7fr;
+}
+ .comp-journey:nth-child(2n) .group{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    border-radius: 3.875rem 0 0 3.875rem ;
+    justify-content: flex-end;
+}
+ .comp-journey:nth-child(2n) .group .card{
+    margin-right: 1.22rem;
+}
+ .comp-journey div.card{
+    margin-left: 1.25rem;
+}
+ .comp-journey div.card h6{
+    color: #FFF;
+    font-family: "Roboto";
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 118.023%; 
+    letter-spacing: 0.01875rem;
+    margin: 0;
+}
+ .comp-journey div.card p{
+    color: rgba(255, 255, 255, 0.80);
+    font-family: "Roboto";
+    font-size: 0.6875rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 118.023%; /* 0.81144rem */
+    letter-spacing: 0.01375rem;
+    margin: 0;
+    margin-top: 0.38rem;
+}
+ .comp-journey div.card span{
+    margin-top: 0.38rem;
+    color: rgba(255, 255, 255, 0.80);
+    font-family: "Roboto";
+    font-size: 0.5625rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 118.023%;
+    display: flex;
+    align-items: center;
+}
+.container-journey .work{
+    display: none;
+}
+.container-journey.exWork .education{
+    display: none;
+}
+.container-journey.exWork .work{
+    margin-top: 1.91rem;
+    display: block;
 }
