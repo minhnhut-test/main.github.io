@@ -9,14 +9,16 @@ body{
     font-size: 16px;;
 }
 .navagation{
-    position: fixed;
+    /* position: fixed; */
     z-index: 1000;
-    top:3.125rem;
     width: 100%;
     border-bottom: 0.5px solid #c1d9d5;
     display: grid;
     align-items: center;
     background-color: #FFFFFF;
+}
+.navagation.fixed{
+    position: fixed;
 }
 
 .navagation .contain{
@@ -46,10 +48,17 @@ main .notification{
     z-index: 100;
     display: flex;
     align-items: center;
+    transition: 0.5s ease;
+}
+
+main .notification.fixed{
+    height: 0rem;
+    transition: 0s ease;
 }
 main .notification .span-notification{
     height: 3.125rem;
     margin-left: 1.25rem;
+    margin-right: 1.22rem;
     height: 1.25rem;
     color: #FFF;
     font-family: "Roboto";
@@ -58,13 +67,18 @@ main .notification .span-notification{
     font-weight: 400;
     line-height: 146.023%; /* 1.27769rem */
     letter-spacing: 0.04375rem;
-    overflow-x: scroll;
+    overflow: hidden;
 }
+
 main .home{
     width:100%;
     z-index: 100;
+    margin-top: 1.2rem;
+    height: 100rem;
+    
+}
+main .home.fixed{
     margin-top: 4.37rem;
-    height: 2rem;
 }
 .home .logo_home{
     margin-left: 1.25rem;
