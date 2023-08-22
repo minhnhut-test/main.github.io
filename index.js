@@ -1,8 +1,9 @@
+
+//scroll  nav bar
 const navagation = document.getElementById("navagation");
 const notification = document.getElementById("notification");
 const home = document.getElementById("home");
 const heightNotification = notification.offsetHeight;
-const heightHome = home.offsetHeight;
 function position(variable){
     var postion = variable.getBoundingClientRect();
     var notificationY = postion.top;
@@ -23,3 +24,5 @@ window.addEventListener("scroll", ()=>{
     }
     console.log(position(home));
 })
+
+

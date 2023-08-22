@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 body{
-    max-width: 100%;
+    width: 100%;
     margin: 0;
     background: #FFF;
 }
@@ -39,6 +39,7 @@ body{
 }
 main{
     display: block;
+    width: 100%;
 }
 main .notification{
     position: relative;
@@ -74,7 +75,6 @@ main .home{
     width:100%;
     z-index: 100;
     margin-top: 1.2rem;
-    height: 100rem;
     
 }
 main .home.fixed{
@@ -109,7 +109,6 @@ main .home.fixed{
     width: 100%;
 }
 .home .h1-home{
-    display: block;
     margin-left: 1.25rem;
     margin-right: 1.22rem;
     display: grid;
@@ -148,7 +147,7 @@ main .home.fixed{
     line-height: 118.023%; /* 1.10644rem */
     letter-spacing: 0.01875rem;
 }
-.home .button-home{
+ .button-home{
     margin-left: 1.25rem;
     margin-right: 1.22rem;
     height: 3rem;
@@ -157,7 +156,7 @@ main .home.fixed{
     border: 0.7px solid #00684A;
     background: #00ED64;
 }
-.home .button-home span{
+ .button-home span{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -169,4 +168,278 @@ main .home.fixed{
     font-style: normal;
     font-weight: 500;
     line-height: 118.023%; 
+}
+
+
+.home .line-home{
+    margin-left: 1.25rem;
+    margin-right: 1.22rem;
+    height: 0.5px;
+    background-color: #116149;
+    margin-top: 2.06rem;
+}
+.home .achive{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1.25rem;
+    margin-right: 1.22rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+.home .achive div{
+    display: block;
+}
+.home .achive div h3{
+    color: #00684A;
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    height: 1.8125rem;
+    margin-bottom: 0;
+}
+.home .achive div span{
+    display: flex;
+    justify-content: center;
+    color: #3D4F58;
+    font-family: "Roboto";
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    height: 0.8125rem;
+    margin-bottom: 1.12rem;
+}
+
+
+
+
+/* about section*/
+
+.about{
+    border-radius: 0rem 5.625rem 0rem 0rem;
+    background: #001E2B;
+    width: 100%;
+    padding-top: 2.44rem;
+    padding-bottom: 2.44rem;
+}
+.about .head-about{
+    margin-left: 1.25rem;
+    margin-right: 1.22rem;
+    position: relative;
+}
+.about .head-about .h1-about{
+    display: grid;
+    grid-template-columns: 10fr 2fr;
+    height: 6.625rem;
+}
+.about .head-about .h1-about h1{
+    color: #FFF8EB;
+    font-family: "Rosarivo";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 118.023%; /* 2.36044rem */
+    letter-spacing: 0.1rem;
+    
+}
+
+.about .img-about{
+    position: relative;
+    display:grid;
+    grid-template-columns: 3fr 6fr 3fr;
+    margin-top: 0.69rem;
+}
+.about .img-about div{
+    grid-column-start: 2;
+}
+.about .img-about div img{
+    width: 100%;
+    z-index: 99;
+}
+.about .img-about .name-about{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    position: absolute;
+    width: 100%;
+    height: 3.125rem;
+    border-radius: 0.3125rem;
+    background: #FFF;
+    z-index: 100;
+    bottom: -2rem;
+    left: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #00684A;
+    text-align: center;
+    font-family: "Roboto Mono";
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 118.023%; /* 1.03269rem */
+    letter-spacing: -0.0175rem;
+}
+
+.head-about .h3-about{
+    color: #FFF;
+    font-family: "Roboto Mono";
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 118.023%; /* 1.32775rem */
+    letter-spacing: -0.0225rem;
+    margin-top: 5.06rem;
+    margin-bottom: 1rem;
+}
+.head-about .p-about{
+    color: #B8C4C2;
+    font-family: "Roboto";
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 1.40625rem */
+    letter-spacing: 0.05156rem;
+}
+
+.button-about{
+    height: 3rem;
+    margin-top: 2rem;
+    border-radius: 0.3125rem;
+    border: 0.7px solid #00684A;
+    background: #00ED64;
+}
+.button-about span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    color: #001E2B;
+    text-align: center;
+    font-family: "Roboto Mono";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 118.023%; 
+}
+.about .level{
+    width: 100%;
+    display: block;
+}
+.level .h1-level{
+    margin-left: 1.25rem;
+    margin-right: 1.22rem;
+    display: grid;
+    grid-template-columns: 10fr 2fr;
+    align-items: center;
+    margin-top: 2.44rem;
+}
+.level .h1-level h1{
+    color: #FFF;
+    font-family: "Roboto Serif";
+    font-size: 1.625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 134.523%; /* 2.186rem */
+    letter-spacing: 0.08125rem;
+    margin: 0;
+}
+.level .p-level{
+    margin-left: 1.25rem;
+    margin-right: 1.22rem;
+    color: #B8C4C2;
+    font-family: "Roboto";
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 134.523%; /* 1.51338rem */
+    letter-spacing: 0.05625rem;
+    margin-top: 0.94rem;
+    margin-bottom: 2.25rem;
+}
+.level .frame-website{
+    margin-left: 1.25rem;
+    position: relative;
+    z-index: 99;
+    text-transform: capitalize;
+}
+.frame-website .h4-website{
+    color: #FFF;
+    font-family: "Roboto Mono";
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 134.523%; /* 1.26113rem */
+    letter-spacing: 0.04688rem;
+}
+.frame-website .container-slide-web{
+    position: relative;
+    display: flex;
+    min-height: 12.0rem;
+    width: 100%;
+    height: auto;
+    overflow-x: auto;
+    position: relative;
+    z-index: 99;
+}
+.frame-website .container-slide-web div{
+    position: relative;
+    width: 15rem;
+   flex: 0 0 auto;
+    border-radius: 0.625rem;
+    background: #21313C;
+    margin-right: 1.5rem;
+}
+.frame-website .container-slide-web div h5{
+    margin-left: 1.25rem;
+    margin-right: 1.22rem;
+    color: #FFF;
+    font-family: "Roboto";
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 134.523%; /* 1.51338rem */
+    letter-spacing: 0.05625rem;
+    margin-top: 1.19rem;
+    margin-bottom: 0.5rem;
+}
+.frame-website .container-slide-web div p{
+    margin-left: 1.25rem;
+    margin-right: 1.22rem;
+    color: #FFF8EB;
+    font-family: "Roboto";
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 146.023%; /* 1.27769rem */
+    letter-spacing: 0.04375rem;
+    
+}
+.frame-website .container-slide-web div span{
+    margin-left: 1.25rem;
+    margin-right: 1.22rem;
+    color: #FFF;
+    font-family: "Roboto";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 134.523%; /* 1.34525rem */
+    letter-spacing: 0.05rem;
+    display: flex;
+    align-items: center;
+    column-gap: 0.75rem;
+}
+.frame-website.app{
+    margin-top: 2.5rem;
+    position: relative;
+    z-index: 99;
+}
+.vector-line-app{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 }
