@@ -43,3 +43,65 @@ journeyChoice.forEach(element =>{
        }
     })
 } )
+
+
+
+//quality project
+const ServicesFrontendChoice = document.querySelectorAll('.liServiceF');
+const listDetailControl = document.querySelectorAll('.frontend-service');
+
+
+
+function removeAllService(element){
+    element.forEach(element => {
+        element.classList.remove("onclick-service");
+    });
+}
+function removeActiveService(element){
+    element.forEach(element =>{
+        element.classList.remove("active");
+    })
+}
+
+function activeListService(list, content){
+    for (let index = 0; index < list.length; index++) {
+        list[index].addEventListener("click", ()=>{
+            removeAllService(list);removeActiveService(content);
+            list[index].classList.add('onclick-service');
+            content[index].classList.add('active');
+        })
+    }
+}
+activeListService(ServicesFrontendChoice, listDetailControl);
+
+
+const ServicesBackendChoice = document.querySelectorAll('.liServiceB');
+const listDetailControlB = document.querySelectorAll('.backend-service');
+
+
+activeListService(ServicesBackendChoice, listDetailControlB);
+
+
+//active frontend 
+const vectorActiveFrontend = document.querySelectorAll('.vector-serviceF');
+const FrameServiceFrontend = document.querySelector('.frame-service.frontend');
+const vectorActiveBackend = document.querySelectorAll('.vector-serviceB');
+console.log(vectorActiveBackend);
+const FrameserviceBackend = document.querySelector('.frame-service.backend');
+
+
+function activeModeService(vector,frame){
+    vector[0].addEventListener("click",()=>{
+        vector[0].classList.remove("active");
+        vector[1].classList.add("active");
+        frame.classList.remove("active");
+    })
+    vector[1].addEventListener("click", () =>{
+        vector[1].classList.remove("active");
+        vector[0].classList.add("active");
+        frame.classList.add("active");
+    })
+}
+activeModeService(vectorActiveFrontend,FrameServiceFrontend);
+activeModeService(vectorActiveBackend,FrameserviceBackend);
+

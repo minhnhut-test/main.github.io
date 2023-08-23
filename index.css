@@ -222,6 +222,8 @@ main .home.fixed{
 /* about section*/
 
 .about{
+    position: relative;
+    z-index: 100;
     border-radius: 0rem 5.625rem 2.625rem 0rem;
     background: #001E2B;
     width: 100%;
@@ -559,4 +561,205 @@ main .home.fixed{
 .container-journey.exWork .work{
     margin-top: 1.91rem;
     display: block;
+}
+
+
+.services{
+    top: -2.5rem;
+    position: relative;
+    width: 100%;
+    z-index: 99;
+    background: #21313C;
+    padding-top: 2.42rem;
+    padding-bottom: 7.42rem;
+}
+.h1-level.service{
+    margin-top: 3.62rem;
+}
+.p-level.service{
+    margin-bottom: 1.94rem;
+}
+.frame-service .content{
+    margin-left: 1.25rem;
+}
+.frame-service .content{
+    border-left: 3px solid #B8C4C2;
+    padding: 0.5rem 0;
+}
+
+
+.frame-service .content img{
+    display: none;
+}
+.frame-service .content img.active{
+    display: block;
+}
+
+
+
+.frame-service .content .h3-content-service{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 1.22rem;
+    margin-left: 0.62rem;
+}
+.frame-service .content .h3-content-service h3{
+    color: #FFF;
+    font-family: "Roboto";
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 134.523%; /* 1.84969rem */
+    letter-spacing: 0.06875rem;
+    margin: 0;
+}
+.frame-service .content .p-container-service{
+    margin-right: 1.22rem;
+    margin-left: 0.62rem;
+    color: #B8C4C2;
+    font-family: "Roboto";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 147.523%; /* 1.47525rem */
+    letter-spacing: 0.05rem;
+    display: none;
+}
+.detail-content{
+    margin-left: 1.25rem;
+    border-radius: 0.625rem 0 0  0.625rem ;
+    border: 0.2px solid #B8C4C2;
+    border-right: none;
+    background: #001E2B;
+    margin-top: 0.62rem;
+    margin-bottom: 1.62rem;
+    display: none;
+}
+.head-detail-content{
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #3D4F58;
+}
+.head-detail-content ul{
+    display: flex;
+    justify-content: space-around;
+    padding-inline-start: 0;
+    margin: 0;
+}
+.head-detail-content ul li{
+    list-style: none;
+    width: 8.9375rem;
+    height: 1.875rem;
+    color: #FFF;
+    font-family: "Roboto";
+    font-size: 0.8125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 147.523%; /* 1.19863rem */
+    letter-spacing: 0.04063rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #21313C;
+    border-radius: 1.25rem;
+}
+.head-detail-content ul li.onclick-service{
+    background-color: #006CFA;
+}
+.main-detail-content{
+    margin-left: 1.25rem;
+    margin-right: 1.22rem;
+    height: 13rem;
+    overflow-y: scroll;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    display: none;
+}
+.main-detail-content.active{
+    display: block;
+}
+.card-content-service h4{
+    margin-top: 1.19rem;
+    margin-bottom: 0.56rem;
+    color: #FBFB01;
+    font-family: "Roboto";
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 147.523%; /* 1.383rem */
+    letter-spacing: 0.04688rem;
+}
+.card-content-service p{
+    color: #B8C4C2;
+    font-family: "Roboto";
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 147.523%; /* 1.29081rem */
+    letter-spacing: 0.04375rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.card-content-service p span{
+    color: #01CDF8;
+}
+
+
+.frame-service.frontend.active .p-container-service{
+    display: block;
+
+}
+.frame-service.frontend.active .detail-content{
+    display: block;
+    
+}
+.frame-service.active .content{
+    border-left: 3px solid #006CFA ;
+   
+}
+
+.frame-service.backend .p-container-service{
+    display: none;
+    
+}
+.frame-service.backend .detail-content{
+    display: none;
+
+}
+
+.frame-service.backend.active .p-container-service{
+    display: block;
+   
+}
+.frame-service.backend.active .detail-content{
+    display: block;
+    
+}
+.frame-service{
+    margin-bottom: 1.63rem;
+}
+
+.portfolio{
+    position: relative;
+    background: #001E2B;
+    width: 100%;
+    height: 20rem;
+    z-index: 100;
+    top: 0rem;
+}
+.portfolio::before{
+    position: absolute;
+    content: "";
+    border-radius: 0rem 5.625rem 0rem 0rem;
+    background: #001E2B;
+    top:-7.9rem;
+    width: 100%;
+    height: 8rem;
+    z-index: 100;
+    color: #FFF;
+    font-family: "Roboto Serif";
+    font-size: 1.625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 134.523%; /* 2.186rem */
+    letter-spacing: 0.08125rem;
 }
