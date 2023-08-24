@@ -450,6 +450,8 @@ main .home.fixed{
     top: 0;
     width: 100%;
     z-index: 1;
+    height: 120%;
+    object-fit: cover;
 }
 .h1-level.journey{
     margin-top: 4.69rem;
@@ -744,6 +746,7 @@ main .home.fixed{
     width: 100%;
     z-index: 100;
     top: 0rem;
+    padding-bottom: 1.25rem;
 }
 .portfolio::before{
     position: absolute;
@@ -820,9 +823,84 @@ main .home.fixed{
     font-weight: 500;
     line-height: 134.523%; /* 1.26113rem */
     letter-spacing: 0.04688rem;
-    width: 9.875rem;
     height: 1.875rem;
 }
 .nav-portfolio ul li:nth-child(1){
     border-bottom: 3px solid #00ED64 ;
+}
+
+
+.img-contain-portfolio{
+    margin-left: 1.25rem;
+    margin-right: 1.22rem;
+    position: relative;
+    margin-top: 3.38rem;
+    display: grid;
+}
+.img-contain-portfolio img{
+    width: 100%;
+    object-fit: cover;
+}
+.h3-contain-portfolio{
+    color: #FFF8EB;
+    font-family: "Roboto";
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 118.023%;
+    letter-spacing: 0.01688rem;
+    margin-left: 1.25rem;
+    margin-right: 1.22rem;
+    margin-top: 1.81rem;
+}
+.h3-contain-portfolio span{
+    color: #FBFB01;
+}
+.p-contain-portfolio{
+    color: #B8C4C2;
+    font-family: "Roboto";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 138.523%; /* 1.38525rem */
+    letter-spacing: 0.045rem;
+    margin-left: 1.25rem;
+    margin-right: 1.22rem;
+}
+.button-portfolio{
+    margin-top: 2.75rem;
+    margin-left: 1.25rem;
+    margin-right: 1.22rem;
+    height: 3rem;
+    border-radius: 0.3125rem;
+    border: 0.7px solid #21313C;
+    background: #00ED64;
+    color: #001E2B;
+    font-family: "Roboto Mono";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 118.023%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.document-contain-portfolio{
+    margin-top: 0.75rem;
+    height: 1.9375rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.document-contain-portfolio span{
+    color: #FFF;
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 138.523%; /* 1.21206rem */
+    letter-spacing: 0.03938rem;
+    display: flex;
+    column-gap: 1.0625rem;
 }
