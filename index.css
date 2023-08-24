@@ -908,7 +908,7 @@ main .home.fixed{
     position: relative;
     background: #3D4F58;
     padding-top: 2.06rem;
-    padding-bottom: 1.81rem;
+    padding-bottom: 8.81rem;
     overflow-x:auto ;
 }
 .h1-testimontial{
@@ -959,8 +959,6 @@ main .home.fixed{
     height: 15.5625rem;
     flex: 0 0 auto;
    margin-right: 2rem;
-}
-.card-test.two{
 }
 .card-test p{
     color: #FFF;
@@ -1037,4 +1035,265 @@ main .home.fixed{
     .vector-line-app{
         display: none;
     }
+}
+
+.contact{
+    position: relative;
+    border-radius: 0 5rem 0 0;
+    background-color: #FFF;
+    top:-5rem;
+    padding-top: 3rem;
+}
+.h1-contact{
+    margin-left: 1.25rem;
+    display: grid;
+    grid-template-columns: 10fr 2fr;
+    margin-right: 1.22rem;
+}
+.h1-contact h1{
+    margin: 0;
+    color: #001E2B;
+    font-family: "Roboto Serif";
+    font-size: 1.625rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 118.023%; /* 1.91788rem */
+    letter-spacing: 0.08125rem;
+}
+.p-contact{
+    margin: 0;
+    margin-left: 1.25rem;
+    margin-right: 1.22rem;
+    margin-top: 0.58rem;
+    color: #3D4F58;
+    font-family: "Roboto";
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 118.023%; /* 1.32775rem */
+    letter-spacing: 0.0225rem;
+}
+.inforcontact{
+    margin-top: 2.75rem;
+}
+.inforcontact div{
+    margin-left: 1.25rem;
+    display: flex;
+    column-gap: 1.57rem;
+    margin-bottom: 1.25rem;
+    align-items: center;
+}
+.inforcontact div span{
+    color:#3D4F58;
+    font-family: "Roboto";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.contact-infor{
+    display: grid;
+}
+.contact-infor span{
+    margin-left: 1.25rem;
+    margin-right: 1.22rem;
+    margin-bottom: -1px;
+    font-family: "Roboto";
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color:#3D4F58;
+}
+.contact-infor input{
+    margin-left: 1.25rem;
+    margin-right: 1.22rem;
+    border-radius: 0.3125rem;
+    border: 1px solid #3d4f58ba;
+    height: 3rem;
+    padding: 0 0.5rem;
+    font-size: 1.125rem;
+    color: #3D4F58;
+    font-family: "Roboto";
+    resize: none;
+}
+.contact-infor input[type=text]:focus{
+   outline: none;
+   border: 1px solid #001E2B;
+}
+.contact-infor.name-write{
+    margin-top: 1.81rem;
+}
+.contact-infor.email-write{
+    margin-top: 0.81rem;
+}
+.contact-infor.message-contact{
+    margin-top: 1.1rem;
+}
+.contact-infor.message-contact textarea{
+    height: 6.0625rem;
+    margin-left: 1.25rem;
+    margin-right: 1.22rem;
+    border: 1px solid #3d4f58ba;
+    border-radius: 0.3125rem;
+    font-size: 1.125rem;
+    color: #3D4F58;
+    font-family: "Roboto";
+    resize: none;
+    padding: 1rem 0.5rem;
+}
+.contact-infor.message-contact textarea:focus{
+    outline: none;
+    border: 1px solid #001E2B;
+}
+.select-service-contact{
+    margin-top: 1.12rem;
+}
+.select-service-contact p{
+    margin: 0;
+    font-family: "Roboto";
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #3D4F58;
+    margin-left: 1.22rem;
+}
+.group-ser-contact{
+    display: flex;
+    padding-left: 1.25rem;
+    padding-right: 1.22rem;
+    justify-content: space-between;
+}
+.group-ser-contact{
+    margin-top: 0.5rem;
+}
+.group-ser-contact .cricle-contact{
+    width: 0.89119rem;
+    height: 0.89119rem;
+    background: #3D4F58;
+    border-radius: 50%;
+}
+.group-ser-contact .card-contact{
+    display:flex;
+    column-gap: 0.5rem;
+    align-items: center;
+}
+.group-ser-contact .card-contact span{
+    color:  #3D4F58;
+    font-family: "Roboto";
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem;
+}
+.card-contact:nth-child(1) div{
+    background-color: #00ED64;
+}
+.card-contact:nth-child(1) span{
+    color: #00ED64;
+}
+.button-contact{
+    margin-left: 1.25rem;
+    margin-right: 1.22rem;
+    height: 3rem;
+    margin-top: 2rem;
+    border-radius: 0.3125rem;
+    border: 0.7px solid #00684A;
+    background: #00ED64;
+}
+.button-contact:hover{
+    cursor: pointer;
+}
+.button-contact span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    color: #001E2B;
+    text-align: center;
+    font-family: "Roboto Mono";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 118.023%; 
+}
+
+footer{
+    background: #001E2B;
+    padding-top: 2.38rem;
+    padding-bottom: 2rem;
+}
+.h1-footer{
+  margin-left: 1.25rem;
+}
+.h1-footer h1{
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "Roboto Mono";
+    font-size: 1.625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.625rem; /* 100% */
+    margin: 0;
+}
+.p-footer{
+    color: #B8C4C2;
+    font-family: "Roboto";
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 1.25rem;
+    margin-top: 0.62rem;
+}
+.h4-about-footer{
+    color: #FFF;
+    font-family: "Roboto";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    margin-top: 2.65rem;
+    margin-bottom: 1.06rem;
+    margin-left: 1.25rem;
+}
+.container-footer{
+    margin-left: 1.25rem;
+    margin-right: 1.22rem;
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    row-gap: 1rem;
+    column-gap: 2rem;
+}
+.container-footer span{
+    color: #B8C4C2;
+    font-family: "Roboto";
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.02813rem;
+    
+}
+.container-footer.social span{
+    display: flex;
+    align-items: center;
+    column-gap: 0.87rem;
+}
+.copyright{
+    margin-top: 2.6rem;
+}
+.copyright span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(217, 217, 217, 0.50);
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
