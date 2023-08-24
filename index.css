@@ -810,7 +810,7 @@ main .home.fixed{
     margin-left: 1.25rem;
     margin-right: 1.22rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-inline-start: 0;
     border-bottom: 1px solid #3D4F58;
 }
@@ -903,4 +903,138 @@ main .home.fixed{
     letter-spacing: 0.03938rem;
     display: flex;
     column-gap: 1.0625rem;
+}
+.testimonial{
+    position: relative;
+    background: #3D4F58;
+    padding-top: 2.06rem;
+    padding-bottom: 1.81rem;
+}
+.h1-testimontial{
+    display: grid;
+    grid-template-columns: 10fr 2fr;
+}
+.h1-testimontial h1{
+    margin: 0;
+    margin-left: 1.25rem;
+    margin-right: 1.22rem;
+    color: #FFF8EB;
+    font-family: "Roboto Slab";
+    font-size: 1.625rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 118.023%;
+}
+.p-testimonial{
+    color: #B8C4C2;
+    font-family: "Roboto";
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 118.023%; 
+    margin-left: 1.25rem;
+    margin-right: 1.22rem;
+}
+.group-testimonial{
+    overflow-x: hidden;
+    margin-top: 1.38rem;
+}
+.card-testimonial{
+    position: relative;
+    margin-left: 1.25rem;
+    display: flex;
+    width: 100%;
+    height: auto;
+    overflow-x: auto;
+    z-index: 100;
+    /* column-gap: 1.12rem; */
+}
+.card-test{
+    position: relative;
+    border-radius: 1.25rem;
+    border: 0.5px solid #B8C4C2;
+    background: #001E2B;
+    width: 16.9375rem;
+    height: 15.5625rem;
+    flex: 0 0 auto;
+   margin-right: 2rem;
+}
+.card-test.two{
+}
+.card-test p{
+    color: #FFF;
+    font-family: "Roboto";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 154.523%;
+    margin-top: 1.81rem;
+    margin-left: 1.25rem;
+    margin-right: 1.22rem;
+
+}
+.card-test h5{
+    color: #FFF;
+    font-family: "Roboto";
+    font-size: 0.8125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 128.023%; 
+    margin: 0;
+    margin-left: 1.25rem;
+    margin-top: 1.91rem;
+}
+.card-test span{
+    margin-left: 1.25rem;
+    margin-right: 1.22rem;
+    color: rgba(217, 217, 217, 0.50);
+    font-family: "Roboto";
+    font-size: 0.8125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 128.023%;
+}
+.group-testimonial{
+    position: relative;
+    overflow: inherit;
+    padding-top: 1rem;
+}
+.container-slider{
+    margin-left: 1.25rem;
+    margin-top: 1.81rem;
+    width: 6.25rem;
+    height: 1.25rem;
+    border: 0.5px  solid #B8C4C2;
+    border-radius:20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 8px;
+    position: relative;
+    z-index: 100;
+}
+.container-slider .button{
+    width: 0.8125rem;
+    height: 0.4375rem;
+    background: #116149;
+    border-radius: 10px;
+}
+.container-slider .button.onclick{
+    width:2.8125rem;
+    background-color: #00ED64;
+}
+.img-testimonial{
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    top:-10%;
+    height: 129%;
+}
+@media  screen and (min-width: 480px) {
+    .img-testimonial{
+        display: none;
+    }
+    .vector-line-app{
+        display: none;
+    }
 }
