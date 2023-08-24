@@ -4,7 +4,12 @@ body{
     width: 100%;
     margin: 0;
     background: #FFF;
+    display: block;
 }
+body.active main, body.active footer{
+    display: none;
+}
+
 :root{
     font-size: 16px;;
 }
