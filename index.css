@@ -909,6 +909,7 @@ main .home.fixed{
     background: #3D4F58;
     padding-top: 2.06rem;
     padding-bottom: 1.81rem;
+    overflow-x:auto ;
 }
 .h1-testimontial{
     display: grid;
@@ -1027,8 +1028,7 @@ main .home.fixed{
     position: absolute;
     z-index: 99;
     width: 100%;
-    top:-10%;
-    height: 129%;
+    top: 22%;
 }
 @media  screen and (min-width: 480px) {
     .img-testimonial{
