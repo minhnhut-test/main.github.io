@@ -484,11 +484,11 @@
 
             <div class="contact-infor name-write">
                 <span>Name</span>
-                <input type="text">
+                <input type="text" value="" id="input-name">
             </div>
             <div class="contact-infor  email-write">
                 <span>Email</span>
-                <input type="text">
+                <input type="text" value="" id="input-email">
             </div>
             <div class="select-service-contact">
                 <p>Select Services?</p>
@@ -512,13 +512,15 @@
 
             <div class="contact-infor message-contact">
                 <span>Message</span>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <textarea name="" cols="30" rows="10" value="" id="input-message"></textarea>
             </div>  
 
-            <div class="button-contact">
+            <div class="button-contact" id="button-message">
                 <span>Send Message</span>
             </div>
         </section>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="sendMessage.js"></script>
     </main>
     <!--Footer-->
     <footer>
