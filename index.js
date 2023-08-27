@@ -4,11 +4,14 @@ const navagation = document.getElementById("navagation");
 const notification = document.getElementById("notification");
 const home = document.getElementById("home");
 const heightNotification = notification.offsetHeight;
+const navBar = document.getElementById("nav-bar");
 function position(variable){
     var postion = variable.getBoundingClientRect();
     var notificationY = postion.top;
     return notificationY;
 }
+document.getElementById("nav-bar").style.height = window.innerHeight +"px";
+document.getElementById("nav-bar").style.top = navagation.getBoundingClientRect().bottom +"px";
 
 window.addEventListener("scroll", ()=>{
     if(position(home) < heightNotification){
@@ -16,14 +19,40 @@ window.addEventListener("scroll", ()=>{
         if(position(navagation) <= 0){
             navagation.classList.add("fixed");
             home.classList.add("fixed");
+            document.getElementById("nav-bar").style.height = window.innerHeight +"px";
+            document.getElementById("nav-bar").style.top = navagation.getBoundingClientRect().bottom +"px";
         }
     }else{
         notification.classList.remove("fixed");
         home.classList.remove("fixed");
         navagation.classList.remove("fixed");
+        document.getElementById("nav-bar").style.height = window.innerHeight +"px";
+        document.getElementById("nav-bar").style.top = navagation.getBoundingClientRect().bottom +"px";
     }
-    console.log(position(home));
 })
+
+
+//// nav-bar mobile
+
+const buttonNavBar = document.querySelectorAll('.svg-nav');
+let checkToggled = false;
+const buttonChangeNav = document.getElementById('svg-nav');
+buttonNavBar.forEach(element =>{
+    element.addEventListener("click", ()=>{
+        if(checkToggled){
+            buttonChangeNav.classList.remove("active");
+            navBar.classList.remove("active");
+        }else{
+            buttonChangeNav.classList.add("active");
+            navBar.classList.add("active");
+        }
+        checkToggled = !checkToggled;
+    })
+})
+
+
+
+
 //work and education
 const containerJourney = document.getElementById("container-journey");
 const journeyChoice = document.querySelectorAll('.liJourney');
@@ -104,4 +133,31 @@ function activeModeService(vector,frame){
 }
 activeModeService(vectorActiveFrontend,FrameServiceFrontend);
 activeModeService(vectorActiveBackend,FrameserviceBackend);
+
+
+///
+
+const navPortfolioActive = document.querySelectorAll('.nav-portfolio-li');
+const groupProfolioActive = document.querySelectorAll('.group-contain-portfolio');
+
+function removePortfolio(element){
+    element.forEach(element =>{
+        element.classList.remove("active");
+    })
+}
+console.log(groupProfolioActive);
+navPortfolioActive.forEach(element =>{
+    element.addEventListener("click", ()=>{
+        removePortfolio(navPortfolioActive);
+        element.classList.add("active");
+        if(element.innerHTML == "Personal Website"){
+            removePortfolio(groupProfolioActive);
+            groupProfolioActive[0].classList.add("active");
+        }else{
+            removePortfolio(groupProfolioActive);
+            groupProfolioActive[1].classList.add("active");
+        }
+    })
+})
+
 

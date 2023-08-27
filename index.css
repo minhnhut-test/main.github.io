@@ -15,6 +15,7 @@ body.active main, body.active footer{
 }
 .navagation{
     /* position: fixed; */
+    position: relative;
     z-index: 1000;
     width: 100%;
     border-bottom: 0.5px solid #c1d9d5;
@@ -24,8 +25,11 @@ body.active main, body.active footer{
 }
 .navagation.fixed{
     position: fixed;
+    z-index: 1000;
 }
-
+.navagation.fixed .contain{
+    z-index: 1000;
+}
 .navagation .contain{
     margin-left: 1.25rem;
     margin-right: 1.22rem;
@@ -33,6 +37,40 @@ body.active main, body.active footer{
     justify-content: space-between;
     align-items: center;
     height: 3.25rem;
+    position: relative;
+    z-index: 1000;
+}
+.svg-nav.active path:nth-child(1),.svg-nav.active path:nth-child(3){
+    display: none;
+}
+
+
+ .nav-bar{
+    position: fixed;
+    width: 7.0625rem;
+    background-color: #00684A;
+    z-index: 999;
+    padding-top: 5rem;
+    display: none;
+}
+.nav-bar.active{
+    display: block;
+}
+.nav-bar ul{
+    display: flex;
+    flex-flow: column;
+    row-gap: 2rem;
+    margin-left: 1.25rem;
+    padding-inline-start: 0;
+}
+.nav-bar ul li{
+    list-style: none;
+    color: #FFF8EB;
+    font-family: "Roboto";
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 .navagation .contain .logo_Minh_Nhut{
     color: #001E2B;
@@ -42,6 +80,7 @@ body.active main, body.active footer{
     font-weight: 500;
     line-height: normal;
 }
+
 main{
     display: block;
     width: 100%;
@@ -830,7 +869,7 @@ main .home.fixed{
     letter-spacing: 0.04688rem;
     height: 1.875rem;
 }
-.nav-portfolio ul li:nth-child(1){
+.nav-portfolio ul li.active{
     border-bottom: 3px solid #00ED64 ;
 }
 
@@ -890,6 +929,13 @@ main .home.fixed{
     justify-content: center;
     align-items: center;
 }
+.group-contain-portfolio{
+    display: none;
+}
+.group-contain-portfolio.active{
+    display: block;
+}
+
 .document-contain-portfolio{
     margin-top: 0.75rem;
     height: 1.9375rem;
