@@ -65,6 +65,9 @@ body.active main, body.active footer{
 }
 .nav-bar ul li{
     list-style: none;
+}
+.nav-bar ul li a{
+    text-decoration: none;
     color: #FFF8EB;
     font-family: "Roboto";
     font-size: 0.9375rem;
