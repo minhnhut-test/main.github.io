@@ -8,8 +8,8 @@ function sizeOfwindow (){
         console.log("Mobile phone");
     }else if( widthOfwindows >= 640 && widthOfwindows<= 1024){
         console.log("Tablet");
-        body.classList.add("active");
-        document.body.innerHTML ="<h1> Sory bạn hiện tại web đang được phát triển ở giao diện tablet và desktop . Nếu bạn dùng resize về mobile vui lòng load lại trang</h1>";
+        // body.classList.add("active");
+        // document.body.innerHTML ="<h1> Sory bạn hiện tại web đang được phát triển ở giao diện tablet và desktop . Nếu bạn dùng resize về mobile vui lòng load lại trang</h1>";
        
     }else{
         console.log("Desktop");

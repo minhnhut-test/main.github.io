@@ -1351,3 +1351,433 @@ footer{
     font-weight: 400;
     line-height: normal;
 }
+
+
+/*Tablet*/
+@media screen and (min-width: 640px){
+    .navagation .contain .logo_Minh_Nhut{
+        font-size: 1.5rem;
+    }
+    .home .logo_home{
+        margin-left: 2.5rem;
+    }
+    .navagation .contain{
+        margin-left: 2.5rem;
+    }
+    .home .image-home img{
+        width: 80%;
+    }
+    .home .image-home{
+        margin-top: 3.09rem;
+        margin-left: 2.5rem;
+    }
+    .home .h1-home{
+        margin-left: 2.5rem;
+        margin-top: 1.81rem;
+    }
+    .home .h1-home h1{
+        font-size: 2.6875rem;
+    }
+    .home .p-home{
+        margin-left: 2.5rem;
+        font-size: 1.25rem;
+    }
+    .home .span-home{
+        margin-left: 2.5rem;
+        font-size: 1.25rem;
+    }
+    .home .logo_home span{
+        font-size: 1rem;
+    }
+    .button-home{
+        margin-left: 2.5rem;
+        width: 17.625rem;
+        height: 3.9375rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .home .line-home{
+        margin-left: 2.5rem;
+        margin-right: 2.75rem;
+    }
+    .home .achive{
+        margin-left: 2.5rem;
+        padding-left: 5.38rem;
+        padding-right: 5.44rem;
+    }
+    .home .achive div h3{
+        font-size: 1.1875rem;
+    }
+    .home .achive div span{
+        margin-top: 0.2rem;
+        font-size: 1rem;
+    }
+
+    .about{
+        margin-top: 2.87rem;
+        padding-top: 2rem;
+        border-radius: 0rem 7.625rem 2.625rem 0rem;
+    }
+    .about .head-about{
+        margin-left: 2.5rem;
+        margin-right: 2.75rem;
+    }
+    .about .head-about .h1-about{
+        grid-template-columns:7fr 5fr;
+    }
+    .about .head-about .h1-about h1{
+        font-size: 2.6875rem;
+    }
+    .about .img-about{
+        margin-top: 5rem;
+    }
+    .about .img-about div img{
+        width: 90%;
+    }
+    .about .img-about .name-about{
+        width: 90%;
+        height: 5.1875rem;
+        font-size: 1.1875rem;
+    }
+    .head-about .h3-about{
+        font-size: 1.5rem;
+    }
+    .head-about .p-about{
+        font-size: 1.25rem;
+    }
+    .button-about{
+        width: 17.625rem;
+        height: 3.9375rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .h1-level{
+        margin-left: 2.5rem;
+        margin-right: 2.75rem;
+        grid-template-columns:9fr 3fr;
+        margin-top: 3.5rem;
+    }
+    .h1-level h1{
+        font-size: 2.1875rem;
+    }
+    .p-level{
+        margin-left: 2.5rem;
+        margin-right: 2.75rem;
+        font-size: 1.5rem;
+    }
+    .level .frame-website{
+        margin-left: 2.5rem;
+    }
+    .frame-website .h4-website{
+        font-size: 1.25rem;
+        margin-top: 2.37rem;
+    }
+    .frame-website .container-slide-web{
+        min-height: 16rem;
+    }
+    .frame-website .container-slide-web div{
+        width: 21.3125rem;
+    }
+    .frame-website .container-slide-web div h5{
+        font-size: 1.5rem;
+        margin-left: 1.88rem;
+        margin-top: 1.63rem;
+        margin-bottom: 1.44rem;
+    }
+    .frame-website .container-slide-web div p{
+        font-size: 1.1875rem;
+        margin-left: 1.88rem;
+        margin-right: 1.94rem;
+    }
+    .frame-website .container-slide-web div span{
+        margin-left: 1.88rem;
+        margin-top: 2.06rem;
+        font-size: 1.3125rem;
+    }
+    .frame-website.app{
+        margin-top: 3.5rem;
+    }
+    .h1-level.journey{
+        grid-template-columns: 10fr 2fr;
+    }
+    .content-journey{
+        margin-left: 2.5rem;
+        margin-right: 2.75rem;
+        
+    }
+    .content-journey ul{
+        justify-content: flex-start;
+    }
+    .content-journey ul li{
+        font-size: 1.25rem;
+    }
+    .comp-journey{
+        grid-template-columns: 6fr 6fr;
+    }
+    .comp-journey div.group{
+        border-radius: 0rem 0.625rem 0.625rem 0rem;
+        margin-bottom: 0.5rem;
+        height: 6.625rem;
+        
+    } 
+    .comp-journey:nth-child(2n){
+        grid-template-columns: 6fr 6fr;
+    }
+    .comp-journey:nth-child(2n) .group{
+        border-radius:  0.625rem 0rem 0rem 0.625rem;
+    }
+    .education{
+        margin-left:2.5rem;
+        margin-right: 2.75rem;
+        padding-top: 2.5rem;
+    }
+    .work{
+        margin-left:2.5rem;
+        margin-right: 2.75rem;
+        padding-top: 2.5rem;
+    }
+    .comp-journey div.card{
+        margin-left: 2.5rem;
+        
+    }
+    .comp-journey:nth-child(2n) .group .card{
+        margin-right: 2.5rem;
+    }
+    .comp-journey div.card h6{
+        font-size: 1.25rem;
+    }
+    .comp-journey div.card p{
+        font-size: 0.9375rem;
+    }
+    .comp-journey div.card span{
+        font-size: 0.75rem;
+    }
+    .comp-journey div.card span img{
+        margin-right: 0.5rem;
+    }
+    .frame-service .content{
+        margin-left: 2.5rem;
+    }
+    .frame-service .content .h3-content-service{
+        margin-left: 1.25em;
+        margin-right: 2.75rem;
+    }
+    .frame-service .content .h3-content-service h3{
+        font-size: 1.8125rem;
+    }
+    .frame-service .content .p-container-service{
+        font-size: 1.3125rem;
+        margin-left: 1.25rem;
+    }
+    .detail-content{
+        margin-left: 2.5rem;
+
+    }
+    .head-detail-content{
+        padding: 0.94rem 0;
+    }
+    .head-detail-content ul{
+        justify-content: flex-start;
+        margin-left: 1.25rem;
+        column-gap: 1.25rem;
+    }
+    .head-detail-content ul li{
+        font-size: 1.0625rem;
+        width: 11.75rem;
+        height: 2.5rem;
+    }
+    .main-detail-content{
+        height: 25.1875rem;
+        margin-top:1.31rem ;
+    }
+    .card-content-service h4{
+        font-size: 1.25rem;
+    }
+    .card-content-service p{
+        font-size: 1.1875rem;
+    }
+    .portfolio{
+        padding-bottom: 2.62rem;
+    }
+    .h1-portfolio{
+        margin-left: 2.5rem;
+        margin-right: 2.75rem;
+    }
+    .h1-portfolio h1{
+        font-size: 2.1875rem;
+    }
+    .p-portfolio{
+        font-size: 1.5rem;
+        margin-left: 2.5rem;
+    }
+    .nav-portfolio ul{
+        margin-left: 2.5rem;
+        margin-right: 2.7rem;
+        justify-content: flex-start;
+        column-gap: 3.06rem;
+    }
+    .nav-portfolio ul li{
+        font-size: 1.3125rem;
+        padding: 0.5rem 0;
+    }
+    .img-contain-portfolio{
+        margin-left: 2.5rem;
+        margin-right: 2.75rem;
+    }
+    .img-contain-portfolio img{
+        width: 90%;
+    }
+    .h3-contain-portfolio{
+        margin-left: 2.5rem;
+        margin-left: 2.75rem;
+        font-size: 1.5rem;
+    }
+    .p-contain-portfolio{
+        margin-left: 2.5rem;
+        margin-right: 2.75rem;
+        font-size: 1.3125rem;
+    }
+    .button-portfolio-container{
+        display: flex;
+        align-items: center;
+        margin-top: 2.38rem;
+    }
+    .button-portfolio{
+        margin-left: 2.5rem;
+        width: 17.625rem;
+        height: 3.9375rem;
+        margin-top: 0;
+        font-size: 1rem;
+    }
+    .document-contain-portfolio{
+        margin-top: 0;
+    }
+    .document-contain-portfolio span{
+        font-size: 1.125rem;
+    }
+
+    .h1-testimontial h1{
+        margin-left: 2.5rem;
+        margin-right: 2.75rem;
+        font-size: 2.1875rem;
+    }
+    .p-testimonial{
+        font-size: 1.5rem;
+        margin-left: 2.5rem;
+        margin-right: 2.75rem;
+    }
+    .card-testimonial{
+        margin-left: 2.5rem;
+    }
+    .card-test{
+        width: 32.6875rem;
+        height: 15.5625rem;
+    }
+    .card-test p{
+        font-size: 1.3125rem;
+        margin-left: 2.56rem;
+        margin-top: 1.81rem;
+    }
+    .card-test h5{
+        font-size: 1.0625rem;
+        margin-left: 2.56rem;
+        margin-top: 1.25rem;
+    }
+    .card-test span{
+        font-size: 1.0625rem;
+        margin-left: 2.56rem;
+    }
+    .container-slider{
+        margin-left: 2.5rem;
+    }
+    .h1-contact{
+        margin-left: 2.5rem;
+    }
+    .h1-contact h1{
+        font-size: 2.125rem;
+    }
+    .p-contact{
+        margin-left: 2.5rem;
+        font-size: 1.5rem;
+    }
+    .inforcontact div{
+        margin-left: 2.5rem;
+    }
+    .inforcontact div span{
+        font-size: 1.3125rem;
+    }
+    .contact-infor span{
+        margin-left: 2.5rem;
+        font-size: 0.875rem;
+        margin-top: 1rem;
+    }
+    .contact-infor input{
+        margin-left: 2.5rem;
+        margin-right: 2.75rem;
+        border: none;
+        border-radius: 0;
+        outline: none;
+        border-bottom: 1px solid #3d4f58ba;
+        padding:0;
+    }
+    .contact-infor input[type=text]:focus{
+        outline: none;
+        border: none;
+        border-bottom: 1px solid #001E2B;
+        
+    }
+    .contact-infor.message-contact textarea{
+        margin-left: 2.5rem;
+        margin-right: 2.75rem;
+    }
+    .select-service-contact p{
+        margin-left: 2.5rem;
+        margin-top: 2rem;
+        font-size: 1.125rem;
+    }
+    .group-ser-contact{
+        padding-left: 2.5rem;
+        padding-right: 2.75rem;
+        justify-content: flex-start;
+        column-gap: 2.65rem;
+        margin-top: 0.8rem;
+    }
+    .group-ser-contact .cricle-contact{
+        width: 1.16556rem;
+        height: 1.18056rem;
+    }
+    .group-ser-contact .card-contact span{
+        font-size: 1.1875rem;
+    }
+    .button-contact{
+        margin-left: 2.5rem;
+        width: 17.625rem;
+        height: 3.9375rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .h1-footer{
+        margin-left: 2.5rem;
+    }
+    .h1-footer h1{
+        font-size: 2.125rem;
+    }
+    .p-footer{
+        margin-left: 2.5rem;
+        font-size: 1.1875rem;
+    }
+    .h4-about-footer{
+        margin-left: 2.5rem;
+        font-size: 1.625rem;
+    }
+    .container-footer{
+        margin-left: 2.5rem;
+        margin-right: 2.75rem;
+    }
+    .container-footer span{
+        font-size: 1.0625rem;
+    }
+}
