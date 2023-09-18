@@ -14,7 +14,7 @@ function sizeOfwindow (){
     }else{
         console.log("Desktop");
         body.classList.add("active");
-        document.body.innerHTML = "<h1> Sory bạn hiện tại web đang được phát triển ở giao diện tablet và desktop . Nếu bạn dùng resize về mobile vui lòng load lại trang</h1>";
+        document.body.innerHTML = "<h1> Sorry bạn hiện tại web đang được phát triển ở giao diện tablet và desktop . Nếu bạn dùng resize về mobile vui lòng load lại trang</h1>";
     }
 } 
 window.addEventListener("resize", sizeOfwindow) || window.addEventListener("load",sizeOfwindow);
